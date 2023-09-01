@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Concepts</title>
+</head>
+<body>
+    <h1>JavaScript Concepts</h1>
+
+    <h2>String Methods:</h2>
+    <p id="stringMethods"></p>
+
+    <h2>Number Methods:</h2>
+    <p id="numberMethods"></p>
+
+    <h2>Array Methods:</h2>
+    <p id="arrayMethods"></p>
+
+    <h2>Date Methods:</h2>
+    <p id="dateMethods"></p>
+
+    <h2>Function Methods:</h2>
+    <p id="functionMethods"></p>
+
+    <script>
+        // String Methods
+        const text = "JavaScript is awesome!";
+        document.getElementById("stringMethods").innerHTML = `
+            Length: ${text.length} <br>
+            To Upper Case: ${text.toUpperCase()} <br>
+            To Lower Case: ${text.toLowerCase()} <br>
+            Substring: ${text.substring(0, 10)} <br>
+            Index Of 'is': ${text.indexOf("is")} <br>
+        `;
+
+        // Number Methods
+        const number = 42.5678;
+        document.getElementById("numberMethods").innerHTML = `
+            Fixed to 2 decimal places: ${number.toFixed(2)} <br>
+            Exponential notation: ${number.toExponential()} <br>
+            Integer Part: ${parseInt(number)} <br>
+            Decimal Part: ${parseFloat(number) % 1} <br>
+            NaN Check: ${isNaN(number)} <br>
+        `;
+
+        // Array Methods
+        const fruits = ["Apple", "Banana", "Cherry", 4, 5, "Grapes"];
+        document.getElementById("arrayMethods").innerHTML = `
+            Length: ${fruits.length} <br>
+            Join as String: ${fruits.join(", ")} <br>
+            Add 'Orange' at End: ${fruits.push("Orange")} <br>
+            Remove Last Element: ${fruits.pop()} <br>
+            Index Of 'Banana': ${fruits.indexOf("Banana")} <br>
+        `;
+
+        // Date Methods
+        const currentDate = new Date();
+        document.getElementById("dateMethods").innerHTML = `
+            Current Date: ${currentDate} <br>
+            Full Year: ${currentDate.getFullYear()} <br>
+            Month: ${currentDate.getMonth() + 1} <br>
+            Day: ${currentDate.getDate()} <br>
+            Day of the Week: ${currentDate.getDay()} <br>
+        `;
+
+        // Function Methods
+        function greet(name) {
+            return `Hello, ${name}!`;
+        }
+
+        const func = greet;
+        document.getElementById("functionMethods").innerHTML = `
+            Function Name: ${func.name} <br>
+            Function Length: ${func.length} <br>
+            Function Result: ${func("John")} <br>
+        `;
+    </script>
+</body>
+</html>
