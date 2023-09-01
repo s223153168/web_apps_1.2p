@@ -6,32 +6,45 @@
     <title>JavaScript Concepts</title>
 </head>
 <body>
-    <h1>JavaScript Concepts</h1>
+    <header>
+        <h1>JavaScript Concepts</h1>
+    </header>
+    <main>
+        <section>
+            <h2>String Methods:</h2>
+            <p id="stringMethods"></p>
+        </section>
 
-    <h2>String Methods:</h2>
-    <p id="stringMethods"></p>
+        <section>
+            <h2>Number Methods:</h2>
+            <p id="numberMethods"></p>
+        </section>
 
-    <h2>Number Methods:</h2>
-    <p id="numberMethods"></p>
+        <section>
+            <h2>Array Methods:</h2>
+            <p id="arrayMethods"></p>
+        </section>
 
-    <h2>Array Methods:</h2>
-    <p id="arrayMethods"></p>
+        <section>
+            <h2>Date Methods:</h2>
+            <p id="dateMethods"></p>
+        </section>
 
-    <h2>Date Methods:</h2>
-    <p id="dateMethods"></p>
-
-    <h2>Function Methods:</h2>
-    <p id="functionMethods"></p>
+        <section>
+            <h2>Function Methods:</h2>
+            <p id="functionMethods"></p>
+        </section>
+    </main>
 
     <script>
         // String Methods
-        const text = "JavaScript is awesome!";
+        const text = "JavaScript is fun!";
         document.getElementById("stringMethods").innerHTML = `
             Length: ${text.length} <br>
             To Upper Case: ${text.toUpperCase()} <br>
             To Lower Case: ${text.toLowerCase()} <br>
             Substring: ${text.substring(0, 10)} <br>
-            Index Of 'is': ${text.indexOf("is")} <br>
+            Index Of 'fun': ${text.indexOf("fun")} <br>
         `;
 
         // Number Methods
